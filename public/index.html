@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
+    <script src="js/main.js"></script>
+</head>
+<body class="antialiased bg-body text-body font-body">
+    <div class="">
+                
+      <section class="relative bg-white overflow-hidden" style="background-image: url('flex-ui-assets/elements/pattern-white.svg'); background-position: center;">
+        <div x-data="{ mobileNavOpen: false }" class="bg-tarnsparent">
+          <nav class="flex justify-between p-6 px-4">
+            <div class="flex justify-between items-center w-full">
+              <div class="w-1/2 xl:w-1/3">
+                <a class="block max-w-max" href="#">
+                  <img class="h-8" src="flex-ui-assets/logos/flex-ui-green-light.svg" alt="">
+                </a>
+              </div>
+              <div class="w-1/2 xl:w-1/3">
+                <ul class="hidden xl:flex xl:justify-center">
+                  <li class="mr-12"><a class="text-coolGray-500 hover:text-coolGray-900 font-medium" href="#">Product</a></li>
+                  <li class="mr-12"><a class="text-coolGray-500 hover:text-coolGray-900 font-medium" href="#">Features</a></li>
+                  <li class="mr-12"><a class="text-coolGray-500 hover:text-coolGray-900 font-medium" href="#">Resources</a></li>
+                  <li><a class="text-coolGray-500 hover:text-coolGray-900 font-medium" href="#">Pricing</a></li>
+                </ul>
+              </div>
+              <div class="w-1/2 xl:w-1/3">
+                <div class="hidden xl:flex items-center justify-end"><a class="inline-block py-2 px-4 mr-2 leading-5 text-coolGray-500 hover:text-coolGray-900 bg-transparent font-medium rounded-md" href="#">Log In</a><a class="inline-block py-2 px-4 text-sm leading-5 text-green-50 bg-green-500 hover:bg-green-600 font-medium focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md" href="#">Sign Up</a></div>
+              </div>
+            </div>
+            <button x-on:click="mobileNavOpen = !mobileNavOpen" class="navbar-burger self-center xl:hidden">
+              <svg width="35" height="35" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect class="text-coolGray-50" width="32" height="32" rx="6" fill="currentColor"></rect>
+                <path class="text-coolGray-500" d="M7 12H25C25.2652 12 25.5196 11.8946 25.7071 11.7071C25.8946 11.5196 26 11.2652 26 11C26 10.7348 25.8946 10.4804 25.7071 10.2929C25.5196 10.1054 25.2652 10 25 10H7C6.73478 10 6.48043 10.1054 6.29289 10.2929C6.10536 10.4804 6 10.7348 6 11C6 11.2652 6.10536 11.5196 6.29289 11.7071C6.48043 11.8946 6.73478 12 7 12ZM25 15H7C6.73478 15 6.48043 15.1054 6.29289 15.2929C6.10536 15.4804 6 15.7348 6 16C6 16.2652 6.10536 16.5196 6.29289 16.7071C6.48043 16.8946 6.73478 17 7 17H25C25.2652 17 25.5196 16.8946 25.7071 16.7071C25.8946 16.5196 26 16.2652 26 16C26 15.7348 25.8946 15.4804 25.7071 15.2929C25.5196 15.1054 25.2652 15 25 15ZM25 20H7C6.73478 20 6.48043 20.1054 6.29289 20.2929C6.10536 20.4804 6 20.7348 6 21C6 21.2652 6.10536 21.5196 6.29289 21.7071C6.48043 21.8946 6.73478 22 7 22H25C25.2652 22 25.5196 21.8946 25.7071 21.7071C25.8946 21.5196 26 21.2652 26 21C26 20.7348 25.8946 20.4804 25.7071 20.2929C25.5196 20.1054 25.2652 20 25 20Z" fill="currentColor"></path>
+              </svg>
+            </button>
+          </nav>
+          <div x-show="mobileNavOpen" class="navbar-menu fixed top-0 left-0 z-50 w-full h-full bg-coolGray-900 bg-opacity-50">
+            <div class="fixed top-0 left-0 bottom-0 w-full w-4/6 max-w-xs bg-white">
+              <nav class="relative p-6 h-full overflow-y-auto">
+                <div class="flex flex-col justify-between h-full">
+                  <a class="inline-block" href="#">
+                    <img class="h-8" src="flex-ui-assets/logos/flex-ui-green-light.svg" alt="">
+                  </a>
+                  <ul class="py-6">
+                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-coolGray-900 font-medium hover:bg-coolGray-50 rounded-md" href="#">Product</a></li>
+                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-coolGray-900 font-medium hover:bg-coolGray-50 rounded-md" href="#">Features</a></li>
+                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-coolGray-900 font-medium hover:bg-coolGray-50 rounded-md" href="#">Pricing</a></li>
+                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-coolGray-900 font-medium hover:bg-coolGray-50 rounded-md" href="#">Resources</a></li>
+                  </ul>
+                  <div class="flex flex-wrap">
+                    <div class="w-full mb-2"><a class="inline-block py-2 px-4 w-full text-sm leading-5 text-coolGray-500 hover:text-coolGray-900 bg-transparent font-medium text-center rounded-md" href="#">Log In</a></div>
+                    <div class="w-full"><a class="inline-block py-2 px-4 w-full text-sm leading-5 text-white bg-green-500 hover:bg-green-600 font-medium text-center focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md" href="#">Sign Up</a></div>
+                  </div>
+                </div>
+              </nav>
+              <button x-on:click="mobileNavOpen = !mobileNavOpen" class="navbar-close absolute top-5 p-4 right-3">
+                <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.94004 6L11.14 1.80667C11.2656 1.68113 11.3361 1.51087 11.3361 1.33333C11.3361 1.1558 11.2656 0.985537 11.14 0.860002C11.0145 0.734466 10.8442 0.66394 10.6667 0.66394C10.4892 0.66394 10.3189 0.734466 10.1934 0.860002L6.00004 5.06L1.80671 0.860002C1.68117 0.734466 1.51091 0.663941 1.33337 0.663941C1.15584 0.663941 0.985576 0.734466 0.860041 0.860002C0.734505 0.985537 0.66398 1.1558 0.66398 1.33333C0.66398 1.51087 0.734505 1.68113 0.860041 1.80667L5.06004 6L0.860041 10.1933C0.797555 10.2553 0.747959 10.329 0.714113 10.4103C0.680267 10.4915 0.662842 10.5787 0.662842 10.6667C0.662842 10.7547 0.680267 10.8418 0.714113 10.9231C0.747959 11.0043 0.797555 11.078 0.860041 11.14C0.922016 11.2025 0.99575 11.2521 1.07699 11.2859C1.15823 11.3198 1.24537 11.3372 1.33337 11.3372C1.42138 11.3372 1.50852 11.3198 1.58976 11.2859C1.671 11.2521 1.74473 11.2025 1.80671 11.14L6.00004 6.94L10.1934 11.14C10.2554 11.2025 10.3291 11.2521 10.4103 11.2859C10.4916 11.3198 10.5787 11.3372 10.6667 11.3372C10.7547 11.3372 10.8419 11.3198 10.9231 11.2859C11.0043 11.2521 11.0781 11.2025 11.14 11.14C11.2025 11.078 11.2521 11.0043 11.286 10.9231C11.3198 10.8418 11.3372 10.7547 11.3372 10.6667C11.3372 10.5787 11.3198 10.4915 11.286 10.4103C11.2521 10.329 11.2025 10.2553 11.14 10.1933L6.94004 6Z" fill="#556987"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="py-20 md:py-28">
+          <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap xl:items-center -mx-4">
+              <div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
+                <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-white bg-green-500 uppercase rounded-9xl">Header</span>
+                <h1 class="mb-6 text-3xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tight">A small business is only as good as its tools.</h1>
+                <p class="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">We’re different. Flex is the only saas business platform that lets you run your business on one platform, seamlessly across all digital channels.</p>
+                <div class="flex flex-wrap">
+                  <div class="w-full md:w-auto py-1 md:py-0 md:mr-4"><a class="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-green-50 font-medium text-center bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 border border-green-500 rounded-md shadow-sm" href="#">Request a Demo</a></div>
+                  <div class="w-full md:w-auto py-1 md:py-0"><a class="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-coolGray-800 font-medium text-center bg-white hover:bg-coolGray-100 focus:ring-2 focus:ring-coolGray-200 focus:ring-opacity-50 border border-coolGray-200 rounded-md shadow-sm" href="#">Sign Up</a></div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 px-4">
+                <div class="relative mx-auto md:mr-0 max-w-max">
+                  <img class="absolute z-10 -left-14 -top-12 w-28 md:w-auto" src="flex-ui-assets/elements/circle3-yellow.svg" alt="">
+                  <img class="absolute z-10 -right-7 -bottom-8 w-28 md:w-auto" src="flex-ui-assets/elements/dots3-blue.svg" alt="">
+                  <img class="relative rounded-7xl" src="flex-ui-assets/images/headers/header.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                
+      <section class="py-24 bg-white overflow-hidden" style="background-image: url('flex-ui-assets/elements/pattern-white.svg'); background-position: center;">
+        <div class="container px-4 mx-auto">
+          <div class="md:max-w-4xl mb-16 md:mb-20">
+            <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-green-500 bg-green-100 font-medium uppercase rounded-full shadow-sm">Features</span>
+            <h1 class="mb-4 text-3xl md:text-4xl leading-tight font-bold tracking-tighter">Gain more insight into how people use your</h1>
+            <p class="text-lg md:text-xl text-coolGray-500 font-medium">With our integrated CRM, project management, collaboration and invoicing capabilities, you can manage every aspect of your business in one secure platform.</p>
+          </div>
+          <div class="flex flex-wrap lg:items-center -mx-4">
+            <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
+              <div class="flex flex-wrap p-8 text-center md:text-left hover:bg-white rounded-md hover:shadow-xl transition duration-200">
+                <div class="w-full md:w-auto mb-6 md:mb-0 md:pr-6">
+                  <div class="inline-flex h-14 w-14 mx-auto items-center justify-center text-white bg-green-500 rounded-lg">
+                    <svg width="21" height="21" viewbox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 18.63H5C4.20435 18.63 3.44129 18.3139 2.87868 17.7513C2.31607 17.1887 2 16.4257 2 15.63V7.63C2 7.36479 1.89464 7.11043 1.70711 6.9229C1.51957 6.73536 1.26522 6.63 1 6.63C0.734784 6.63 0.48043 6.73536 0.292893 6.9229C0.105357 7.11043 0 7.36479 0 7.63L0 15.63C0 16.9561 0.526784 18.2279 1.46447 19.1655C2.40215 20.1032 3.67392 20.63 5 20.63H17C17.2652 20.63 17.5196 20.5246 17.7071 20.3371C17.8946 20.1496 18 19.8952 18 19.63C18 19.3648 17.8946 19.1104 17.7071 18.9229C17.5196 18.7354 17.2652 18.63 17 18.63ZM21 0.630005H7C6.20435 0.630005 5.44129 0.946075 4.87868 1.50868C4.31607 2.07129 4 2.83436 4 3.63V13.63C4 14.4257 4.31607 15.1887 4.87868 15.7513C5.44129 16.3139 6.20435 16.63 7 16.63H21C21.7956 16.63 22.5587 16.3139 23.1213 15.7513C23.6839 15.1887 24 14.4257 24 13.63V3.63C24 2.83436 23.6839 2.07129 23.1213 1.50868C22.5587 0.946075 21.7956 0.630005 21 0.630005ZM20.59 2.63L14.71 8.51C14.617 8.60373 14.5064 8.67813 14.3846 8.7289C14.2627 8.77966 14.132 8.8058 14 8.8058C13.868 8.8058 13.7373 8.77966 13.6154 8.7289C13.4936 8.67813 13.383 8.60373 13.29 8.51L7.41 2.63H20.59ZM22 13.63C22 13.8952 21.8946 14.1496 21.7071 14.3371C21.5196 14.5246 21.2652 14.63 21 14.63H7C6.73478 14.63 6.48043 14.5246 6.29289 14.3371C6.10536 14.1496 6 13.8952 6 13.63V4L11.88 9.88C12.4425 10.4418 13.205 10.7574 14 10.7574C14.795 10.7574 15.5575 10.4418 16.12 9.88L22 4V13.63Z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="w-full md:flex-1 md:pt-3">
+                  <h3 class="mb-4 text-xl md:text-2xl leading-tight text-coolGray-900 font-bold">Measure your performance</h3>
+                  <p class="text-coolGray-500 font-medium">Stay connected with your team and make quick decisions wherever you are.</p>
+                </div>
+              </div>
+              <div class="flex flex-wrap p-8 text-center md:text-left hover:bg-white rounded-md hover:shadow-xl transition duration-200">
+                <div class="w-full md:w-auto mb-6 md:mb-0 md:pr-6">
+                  <div class="inline-flex h-14 w-14 mx-auto items-center justify-center text-white bg-green-500 rounded-lg">
+                    <svg width="21" height="21" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 18H9.24C9.37161 18.0008 9.50207 17.9755 9.62391 17.9258C9.74574 17.876 9.85656 17.8027 9.95 17.71L16.87 10.78L19.71 8C19.8037 7.90704 19.8781 7.79644 19.9289 7.67458C19.9797 7.55272 20.0058 7.42201 20.0058 7.29C20.0058 7.15799 19.9797 7.02728 19.9289 6.90542C19.8781 6.78356 19.8037 6.67296 19.71 6.58L15.47 2.29C15.377 2.19627 15.2664 2.12188 15.1446 2.07111C15.0227 2.02034 14.892 1.9942 14.76 1.9942C14.628 1.9942 14.4973 2.02034 14.3754 2.07111C14.2536 2.12188 14.143 2.19627 14.05 2.29L11.23 5.12L4.29 12.05C4.19732 12.1434 4.12399 12.2543 4.07423 12.3761C4.02446 12.4979 3.99924 12.6284 4 12.76V17C4 17.2652 4.10536 17.5196 4.29289 17.7071C4.48043 17.8946 4.73478 18 5 18ZM14.76 4.41L17.59 7.24L16.17 8.66L13.34 5.83L14.76 4.41ZM6 13.17L11.93 7.24L14.76 10.07L8.83 16H6V13.17ZM21 20H3C2.73478 20 2.48043 20.1054 2.29289 20.2929C2.10536 20.4804 2 20.7348 2 21C2 21.2652 2.10536 21.5196 2.29289 21.7071C2.48043 21.8946 2.73478 22 3 22H21C21.2652 22 21.5196 21.8946 21.7071 21.7071C21.8946 21.5196 22 21.2652 22 21C22 20.7348 21.8946 20.4804 21.7071 20.2929C21.5196 20.1054 21.2652 20 21 20Z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="w-full md:flex-1 md:pt-3">
+                  <h3 class="mb-4 text-xl md:text-2xl leading-tight text-coolGray-900 font-bold">Build your website</h3>
+                  <p class="text-coolGray-500 font-medium">A tool that lets you build a dream website even if you know nothing about web design or programming.</p>
+                </div>
+              </div>
+              <div class="flex flex-wrap p-8 text-center md:text-left hover:bg-white rounded-md hover:shadow-xl transition duration-200">
+                <div class="w-full md:w-auto mb-6 md:mb-0 md:pr-6">
+                  <div class="inline-flex h-14 w-14 mx-auto items-center justify-center text-white bg-green-500 rounded-lg">
+                    <svg width="21" height="21" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 13H3C2.73478 13 2.48043 13.1054 2.29289 13.2929C2.10536 13.4804 2 13.7348 2 14V21C2 21.2652 2.10536 21.5196 2.29289 21.7071C2.48043 21.8946 2.73478 22 3 22H10C10.2652 22 10.5196 21.8946 10.7071 21.7071C10.8946 21.5196 11 21.2652 11 21V14C11 13.7348 10.8946 13.4804 10.7071 13.2929C10.5196 13.1054 10.2652 13 10 13ZM9 20H4V15H9V20ZM21 2H14C13.7348 2 13.4804 2.10536 13.2929 2.29289C13.1054 2.48043 13 2.73478 13 3V10C13 10.2652 13.1054 10.5196 13.2929 10.7071C13.4804 10.8946 13.7348 11 14 11H21C21.2652 11 21.5196 10.8946 21.7071 10.7071C21.8946 10.5196 22 10.2652 22 10V3C22 2.73478 21.8946 2.48043 21.7071 2.29289C21.5196 2.10536 21.2652 2 21 2V2ZM20 9H15V4H20V9ZM21 13H14C13.7348 13 13.4804 13.1054 13.2929 13.2929C13.1054 13.4804 13 13.7348 13 14V21C13 21.2652 13.1054 21.5196 13.2929 21.7071C13.4804 21.8946 13.7348 22 14 22H21C21.2652 22 21.5196 21.8946 21.7071 21.7071C21.8946 21.5196 22 21.2652 22 21V14C22 13.7348 21.8946 13.4804 21.7071 13.2929C21.5196 13.1054 21.2652 13 21 13ZM20 20H15V15H20V20ZM10 2H3C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V10C2 10.2652 2.10536 10.5196 2.29289 10.7071C2.48043 10.8946 2.73478 11 3 11H10C10.2652 11 10.5196 10.8946 10.7071 10.7071C10.8946 10.5196 11 10.2652 11 10V3C11 2.73478 10.8946 2.48043 10.7071 2.29289C10.5196 2.10536 10.2652 2 10 2V2ZM9 9H4V4H9V9Z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="w-full md:flex-1 md:pt-3">
+                  <h3 class="mb-4 text-xl md:text-2xl leading-tight text-coolGray-900 font-bold">Connect multiple apps</h3>
+                  <p class="text-coolGray-500 font-medium">The first business platform to bring together all of your products from one place.</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 px-4">
+              <div class="relative mx-auto md:mr-0 max-w-max">
+                <img class="absolute z-10 -left-8 -top-8 w-28 md:w-auto text-yellow-400" src="flex-ui-assets/elements/circle3-yellow.svg" alt="">
+                <img class="absolute z-10 -right-7 -bottom-8 w-28 md:w-auto text-blue-500" src="flex-ui-assets/elements/dots3-blue.svg" alt="">
+                <img src="../flex-ui-assets/images/features/stock2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                
+      <section class="py-24 bg-white overflow-hidden" style="background-image: url('flex-ui-assets/elements/pattern-white.svg'); background-position: center;">
+        <div class="container px-4 mx-auto">
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
+              <div class="relative mx-auto md:ml-0 max-w-max">
+                <img class="absolute z-10 -right-8 -top-8 w-28 md:w-auto" src="flex-ui-assets/elements/circle3-yellow.svg" alt="">
+                <img class="absolute z-10 -left-10 -bottom-8 w-28 md:w-auto" src="flex-ui-assets/elements/dots3-blue.svg" alt="">
+                <img src="flex-ui-assets/images/how-it-works/stock.png" alt="">
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 px-4">
+              <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-green-500 bg-green-100 font-medium uppercase rounded-full shadow-sm">How it works</span>
+              <h2 class="mb-12 text-4xl md:text-5xl leading-tight font-bold tracking-tighter">Gain more insight into how people use your</h2>
+              <div class="flex flex-wrap -mx-4 text-center md:text-left">
+                <div class="w-full md:w-1/2 px-4 mb-8">
+                  <div class="inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-green-500 font-semibold rounded-full">1</div>
+                  <h3 class="mb-2 text-xl font-bold">Custom analytics</h3>
+                  <p class="font-medium text-coolGray-500">Get a complete sales dashboard in the cloud. See activity, revenue and social metrics all in one place.</p>
+                </div>
+                <div class="w-full md:w-1/2 px-4 mb-8">
+                  <div class="inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-green-500 font-semibold rounded-full">2</div>
+                  <h3 class="mb-2 text-xl font-bold">Team Management</h3>
+                  <p class="font-medium text-coolGray-500">Our calendar lets you know what is happening with customer and projects so you are able to control process.</p>
+                </div>
+                <div class="w-full md:w-1/2 px-4 mb-8">
+                  <div class="inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-green-500 font-semibold rounded-full">3</div>
+                  <h3 class="mb-2 text-xl font-bold">Easy setup</h3>
+                  <p class="font-medium text-coolGray-500">End to End Business Platform, Sales Management, Marketing Automation, Help Desk and many more</p>
+                </div>
+                <div class="w-full md:w-1/2 px-4">
+                  <div class="inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-green-500 font-semibold rounded-full">4</div>
+                  <h3 class="mb-2 text-xl font-bold">Build your website</h3>
+                  <p class="font-medium text-coolGray-500">A tool that lets you build a dream website even if you know nothing about web design or programming.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                
+      <section class="bg-white overflow-hidden">
+        <div class="wave-top w-full text-coolGray-50">
+          <svg viewbox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 64.5909H349.922C606.664 64.5909 859.771 -7.62939e-06 1080 -7.62939e-06C1300.23 -7.62939e-06 1440 64.5909 1440 64.5909V116H0V64.5909Z" fill="currentColor"></path>
+          </svg>
+        </div>
+        <div class="py-20 xl:py-24 bg-coolGray-50" style="background-image: url('flex-ui-assets/elements/pattern-light-big.svg'); background-position: center;">
+          <div class="container px-4 mx-auto">
+            <div class="text-center">
+              <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-green-500 bg-green-100 font-medium uppercase rounded-9xl">Pricing</span>
+              <h3 class="mb-4 text-3xl md:text-5xl text-coolGray-900 font-bold tracking-tighter">Flexible pricing plan for your startup</h3>
+              <p class="mb-6 text-lg md:text-xl text-coolGray-500 font-medium">Pricing that scales with your business immediately.</p>
+              <div class="flex mb-12 mx-auto max-w-max border border-coolGray-200 overflow-hidden rounded-md shadow-lg"><a class="py-3 px-5 text-sm text-green-500 bg-white font-medium border-r border-coolGray-200" href="#">Billed Monthly</a><a class="py-3 px-5 text-sm text-coolGray-500 bg-coolGray-50 font-medium" href="#">Billed Annually</a></div>
+            </div>
+            <div class="flex flex-wrap justify-center -mx-4">
+              <div class="w-full md:w-1/2 p-4">
+                <div class="flex flex-col pt-8 pb-8 bg-white rounded-md shadow-md hover:scale-105 transition duration-500">
+                  <div class="flex items-center justify-between px-8">
+                    <div>
+                      <h3 class="text-2xl md:text-3xl text-coolGray-800 font-semibold tracking-tighter">Basic plan</h3>
+                      <p class="text-coolGray-400 font-medium">For bigger teams</p>
+                    </div>
+                    <div>
+                      <span class="relative -top-10 right-1 text-3xl text-coolGray-900 font-bold">$</span>
+                      <span class="text-6xl md:text-7xl text-coolGray-900 font-semibold tracking-tighter">99</span>
+                      <span class="inline-block ml-1 text-coolGray-500 font-semibold">/mo</span>
+                    </div>
+                  </div>
+                  <div class="border-b border-coolGray-100"></div>
+                  <ul class="self-start px-8 pt-8 pb-16">
+                    <li class="flex items-center mb-4 text-coolGray-500 font-medium">
+                      <img class="mr-3" src="flex-ui-assets/elements/pricing/checkbox-green.svg">
+                      <span>Access to all features</span>
+                    </li>
+                    <li class="flex items-center mb-4 text-coolGray-500 font-medium">
+                      <img class="mr-3" src="flex-ui-assets/elements/pricing/checkbox-green.svg">
+                      <span>Assisted onboarding support</span>
+                    </li>
+                    <li class="flex items-center mb-4 text-coolGray-500 font-medium">
+                      <img class="mr-3" src="flex-ui-assets/elements/pricing/checkbox-green.svg">
+                      <span>CPM Overage: Unlimited</span>
+                    </li>
+                    <li class="flex items-center text-coolGray-500 font-medium">
+                      <img class="mr-3" src="flex-ui-assets/elements/pricing/checkbox-green.svg">
+                      <span>Program reviews 1x a month</span>
+                    </li>
+                  </ul>
+                  <div class="border-b border-coolGray-100"></div>
+                  <div class="px-8 pt-8"><a class="inline-block py-4 px-7 w-full text-base md:text-lg leading-6 text-green-50 font-medium text-center bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md shadow-sm" href="#">Get Started Now</a></div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 p-4">
+                <div class="flex flex-col pt-8 pb-8 bg-white rounded-md shadow-md hover:scale-105 transition duration-500">
+                  <div class="flex items-center justify-between px-8">
+                    <div>
+                      <h3 class="text-2xl md:text-3xl text-coolGray-800 font-semibold tracking-tighter">Lifetime</h3>
+                      <p class="text-coolGray-400 font-medium">Unlimited possibilities</p>
+                    </div>
+                    <div>
+                      <span class="relative -top-10 right-1 text-3xl text-coolGray-900 font-bold">$</span>
+                      <span class="text-6xl md:text-7xl text-coolGray-900 font-semibold tracking-tighter">189</span>
+                      <span class="inline-block ml-1 text-coolGray-500 font-semibold">/mo</span>
+                    </div>
+                  </div>
+                  <div class="border-b border-coolGray-100"></div>
+                  <ul class="self-start px-8 pt-8 pb-16">
+                    <li class="flex items-center mb-4 text-coolGray-500 font-medium">
+                      <img class="mr-3" src="flex-ui-assets/elements/pricing/checkbox-green.svg">
+                      <span>Access to all features</span>
+                    </li>
+                    <li class="flex items-center mb-4 text-coolGray-500 font-medium">
+                      <img class="mr-3" src="flex-ui-assets/elements/pricing/checkbox-green.svg">
+                      <span>Assisted onboarding support</span>
+                    </li>
+                    <li class="flex items-center mb-4 text-coolGray-500 font-medium">
+                      <img class="mr-3" src="flex-ui-assets/elements/pricing/checkbox-green.svg">
+                      <span>CPM Overage: Unlimited</span>
+                    </li>
+                    <li class="flex items-center text-coolGray-500 font-medium">
+                      <img class="mr-3" src="flex-ui-assets/elements/pricing/checkbox-green.svg">
+                      <span>Program reviews 1x a month</span>
+                    </li>
+                  </ul>
+                  <div class="border-b border-coolGray-100"></div>
+                  <div class="px-8 pt-8"><a class="inline-block py-4 px-7 w-full text-base md:text-lg leading-6 text-green-50 font-medium text-center bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md shadow-sm" href="#">Get Started Now</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wave-bottom w-full text-coolGray-50">
+          <svg viewbox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1440 51.4091H1090.08C833.336 51.4091 580.229 116 360 116C139.771 116 0 51.4091 0 51.4091V0H1440V51.4091Z" fill="currentColor"></path>
+          </svg>
+        </div>
+      </section>
+                
+      <section class="wave-top wave-bottom">
+        <div class="wave wave-top w-full text-coolGray-50">
+          <svg viewbox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 64.5909H349.922C606.664 64.5909 859.771 -7.62939e-06 1080 -7.62939e-06C1300.23 -7.62939e-06 1440 64.5909 1440 64.5909V116H0V64.5909Z" fill="currentColor"></path>
+          </svg>
+        </div>
+        <div class="py-16 md:py-24 bg-coolGray-50" style="background-image: url('flex-ui-assets/elements/pattern-light1.svg'); background-position: center;">
+          <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap items-center justify-center lg:justify-between -mx-4">
+              <div class="w-auto px-4 order-last lg:order-first">
+                <button class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white hover:bg-coolGray-100">
+                  <svg width="12" height="14" viewbox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.9999 6H3.4099L6.7099 2.71C6.8982 2.5217 7.00399 2.2663 7.00399 2C7.00399 1.7337 6.8982 1.47831 6.7099 1.29C6.52159 1.1017 6.2662 0.995911 5.9999 0.995911C5.73359 0.995911 5.4782 1.1017 5.2899 1.29L0.289896 6.29C0.198856 6.38511 0.127491 6.49725 0.0798963 6.62C-0.0201217 6.86346 -0.0201217 7.13654 0.0798963 7.38C0.127491 7.50275 0.198856 7.6149 0.289896 7.71L5.2899 12.71C5.38286 12.8037 5.49346 12.8781 5.61532 12.9289C5.73718 12.9797 5.86788 13.0058 5.9999 13.0058C6.13191 13.0058 6.26261 12.9797 6.38447 12.9289C6.50633 12.8781 6.61693 12.8037 6.7099 12.71C6.80363 12.617 6.87802 12.5064 6.92879 12.3846C6.97956 12.2627 7.00569 12.132 7.00569 12C7.00569 11.868 6.97956 11.7373 6.92879 11.6154C6.87802 11.4936 6.80363 11.383 6.7099 11.29L3.4099 8H10.9999C11.2651 8 11.5195 7.89465 11.707 7.70711C11.8945 7.51957 11.9999 7.26522 11.9999 7C11.9999 6.73479 11.8945 6.48043 11.707 6.2929C11.5195 6.10536 11.2651 6 10.9999 6Z" fill="#404F65"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="w-full lg:w-2/6 px-4 mb-12 lg:mb-0">
+                <div class="flex items-center">
+                  <img class="w-20 md:w-24 h-20 md:h-24 mr-6 rounded-full" src="flex-ui-assets/images/testimonials/avatar1.png" alt="">
+                  <div>
+                    <h3 class="mb-2 text-xl md:text-2xl font-semibold">Darren Dunlap</h3>
+                    <span class="text-lg text-coolGray-500 font-medium">CEO &amp; Founder at Flex.co</span>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full lg:w-2/6 px-4 mb-12 lg:mb-0">
+                <div class="relative pt-12 pb-6 sm:p-6">
+                  <img class="absolute top-0 left-0" src="flex-ui-assets/elements/testimonials/quote-top-green.svg" alt="">
+                  <img class="absolute bottom-0 right-0" src="flex-ui-assets/elements/testimonials/quote-down-green.svg" alt="">
+                  <div class="relative">
+                    <h2 class="text-2xl font-semibold tracking-tighter">The best solution for anyone who wants to work a flexible schedule but still earn a full-time income.</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="w-auto px-4 order-last">
+                <button class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white hover:bg-coolGray-100">
+                  <svg width="12" height="14" viewbox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.92 6.62C11.8724 6.49725 11.801 6.38511 11.71 6.29L6.71 1.29C6.61676 1.19676 6.50607 1.1228 6.38425 1.07234C6.26243 1.02188 6.13186 0.995911 6 0.995911C5.7337 0.995911 5.4783 1.1017 5.29 1.29C5.19676 1.38324 5.1228 1.49393 5.07234 1.61575C5.02188 1.73758 4.99591 1.86814 4.99591 2C4.99591 2.2663 5.1017 2.5217 5.29 2.71L8.59 6H1C0.734784 6 0.48043 6.10536 0.292893 6.2929C0.105357 6.48043 0 6.73479 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89465 0.734784 8 1 8H8.59L5.29 11.29C5.19627 11.383 5.12188 11.4936 5.07111 11.6154C5.02034 11.7373 4.9942 11.868 4.9942 12C4.9942 12.132 5.02034 12.2627 5.07111 12.3846C5.12188 12.5064 5.19627 12.617 5.29 12.71C5.38296 12.8037 5.49356 12.8781 5.61542 12.9289C5.73728 12.9797 5.86799 13.0058 6 13.0058C6.13201 13.0058 6.26272 12.9797 6.38458 12.9289C6.50644 12.8781 6.61704 12.8037 6.71 12.71L11.71 7.71C11.801 7.6149 11.8724 7.50275 11.92 7.38C12.02 7.13654 12.02 6.86346 11.92 6.62Z" fill="#404F65"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wave wave-bottom w-full text-coolGray-50">
+          <svg viewbox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1440 51.4091H1090.08C833.336 51.4091 580.229 116 360 116C139.771 116 0 51.4091 0 51.4091V0H1440V51.4091Z" fill="currentColor"></path>
+          </svg>
+        </div>
+      </section>
+                
+      <section class="wave-top wave-bottom">
+        <div class="wave wave-top w-full text-coolGray-50">
+          <svg viewbox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1440 64.5909H1090.08C833.336 64.5909 580.229 -7.62939e-06 360 -7.62939e-06C139.771 -7.62939e-06 0 64.5909 0 64.5909V116H1440V64.5909Z" fill="currentColor"></path>
+          </svg>
+        </div>
+        <div class="py-16 md:py-24 bg-coolGray-50" style="background-image: url('flex-ui-assets/elements/pattern-light1.svg'); background-position: center;">
+          <div class="container px-4 mx-auto">
+            <div class="mb-8 text-center">
+              <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-green-500 bg-green-100 font-medium uppercase rounded-9xl">Our Clients</span>
+              <h3 class="mb-4 text-4xl md:text-5xl text-coolGray-900 font-bold tracking-tighter">Trusted by the top companies in this industry</h3>
+              <p class="text-lg md:text-xl text-coolGray-500 font-medium">The only SaaS business platform that combines CRM, marketing automation &amp; commerce.</p>
+            </div>
+            <div class="flex flex-wrap justify-center -mx-4">
+              <div class="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
+                <div class="flex items-center h-32 md:h-36 px-4 md:px-8 rounded-md bg-white shadow-md">
+                  <img class="mx-auto" src="flex-ui-assets/brands/logo-clouds/jiggle-logo.svg" alt="">
+                </div>
+              </div>
+              <div class="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
+                <div class="flex items-center h-32 md:h-36 px-4 md:px-8 rounded-md bg-white shadow-md">
+                  <img class="mx-auto" src="flex-ui-assets/brands/logo-clouds/symtric-logo.svg" alt="">
+                </div>
+              </div>
+              <div class="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
+                <div class="flex items-center h-32 md:h-36 px-4 md:px-8 rounded-md bg-white shadow-md">
+                  <img class="mx-auto" src="flex-ui-assets/brands/logo-clouds/wishelp-logo.svg" alt="">
+                </div>
+              </div>
+              <div class="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 md:mb-0">
+                <div class="flex items-center h-32 md:h-36 px-4 md:px-8 rounded-md bg-white shadow-md">
+                  <img class="mx-auto" src="flex-ui-assets/brands/logo-clouds/resecurb-logo.svg" alt="">
+                </div>
+              </div>
+              <div class="w-1/2 md:w-1/3 lg:w-1/5 px-4">
+                <div class="flex items-center h-32 md:h-36 px-4 md:px-8 rounded-md bg-white shadow-md">
+                  <img class="mx-auto" src="flex-ui-assets/brands/logo-clouds/welytics-logo.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wave wave-bottom w-full text-coolGray-50">
+          <svg viewbox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 51.4091H349.922C606.664 51.4091 859.771 116 1080 116C1300.23 116 1440 51.4091 1440 51.4091V0H0V51.4091Z" fill="currentColor"></path>
+          </svg>
+        </div>
+      </section>
+                
+      <section class="wave-top wave-bottom bg-white">
+        <div class="wave wave-top w-full text-coolGray-50">
+          <svg viewbox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1440 64.5909H1090.08C833.336 64.5909 580.229 -7.62939e-06 360 -7.62939e-06C139.771 -7.62939e-06 0 64.5909 0 64.5909V116H1440V64.5909Z" fill="currentColor"></path>
+          </svg>
+        </div>
+        <div class="py-24 bg-coolGray-50" style="background-image: url('flex-ui-assets/elements/pattern-light1.svg'); background-position: center;">
+          <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap -mx-4">
+              <div class="w-full md:w-1/2 px-4 mb-20 md:mb-0">
+                <div class="max-w-md">
+                  <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-green-500 bg-green-100 font-medium rounded-full shadow-sm">FAQ</span>
+                  <h2 class="mb-4 text-4xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">Frequently Asked Questions</h2>
+                  <p class="text-lg md:text-xl text-coolGray-500 font-medium">Flex is the only saas business platform that lets you run your business on one platform, seamlessly across all digital channels.</p>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 px-4">
+                  <div class="flex flex-wrap w-full mb-10 text-left cursor-pointer" x-on:click="accordion = !accordion" x-data="{ accordion: false }">
+                    <div class="flex items-center justify-between w-full pb-4">
+                      <h3 class="text-xl text-coolGray-900 font-bold">How long does it take to ship my order?</h3>
+                      <span class="text-green-500 transition duration-200 transform" x-on:click="accordion = !accordion" :class="{'rotate-0': accordion, 'rotate-180': !accordion }">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.71 8.29C12.6149 8.19896 12.5028 8.12759 12.38 8.08C12.1365 7.97998 11.8635 7.97998 11.62 8.08C11.4972 8.12759 11.3851 8.19896 11.29 8.29L8.29 11.29C8.1017 11.4783 7.99591 11.7337 7.99591 12C7.99591 12.2663 8.1017 12.5217 8.29 12.71C8.4783 12.8983 8.7337 13.0041 9 13.0041C9.2663 13.0041 9.5217 12.8983 9.71 12.71L11 11.41L11 15C11 15.2652 11.1054 15.5196 11.2929 15.7071C11.4804 15.8946 11.7348 16 12 16C12.2652 16 12.5196 15.8946 12.7071 15.7071C12.8946 15.5196 13 15.2652 13 15L13 11.41L14.29 12.71C14.383 12.8037 14.4936 12.8781 14.6154 12.9289C14.7373 12.9797 14.868 13.0058 15 13.0058C15.132 13.0058 15.2627 12.9797 15.3846 12.9289C15.5064 12.8781 15.617 12.8037 15.71 12.71C15.8037 12.617 15.8781 12.5064 15.9289 12.3846C15.9797 12.2627 16.0058 12.132 16.0058 12C16.0058 11.868 15.9797 11.7373 15.9289 11.6154C15.8781 11.4936 15.8037 11.383 15.71 11.29L12.71 8.29ZM12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51808 6.3459 2.7612 8.17316C2.00433 10.0004 1.80629 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92893 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8078C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 9.34783 20.9464 6.80429 19.0711 4.92893C18.1425 4.00034 17.0401 3.26375 15.8268 2.7612C14.6136 2.25865 13.3132 2 12 2ZM12 20C10.4177 20 8.87103 19.5308 7.55544 18.6518C6.23984 17.7727 5.21446 16.5233 4.60896 15.0615C4.00346 13.5997 3.84503 11.9911 4.15372 10.4393C4.4624 8.88743 5.22432 7.46196 6.34314 6.34314C7.46196 5.22432 8.88743 4.4624 10.4393 4.15371C11.9911 3.84503 13.5997 4.00346 15.0615 4.60896C16.5233 5.21446 17.7727 6.23984 18.6518 7.55543C19.5308 8.87103 20 10.4177 20 12C20 14.1217 19.1571 16.1566 17.6569 17.6569C16.1566 19.1571 14.1217 20 12 20Z" fill="currentColor"></path>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="overflow-hidden transition-all max-h-0 duration-500 text-coolGray-500 font-medium" x-ref="container" :style="accordion ? 'max-height: ' + $refs.container.scrollHeight + 'px' : ''">Orders are usually shipped within 1-2 business days after placing the order.</div>
+                  </div>
+                  <div class="flex flex-wrap w-full mb-10 text-left cursor-pointer" x-on:click="accordion = !accordion" x-data="{ accordion: false }">
+                    <div class="flex items-center justify-between w-full pb-4">
+                      <h3 class="text-xl text-coolGray-900 font-bold">What payment methods do you accept?</h3>
+                      <span class="text-green-500 transition duration-200 transform" x-on:click="accordion = !accordion" :class="{'rotate-0': accordion, 'rotate-180': !accordion }">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.71 8.29C12.6149 8.19896 12.5028 8.12759 12.38 8.08C12.1365 7.97998 11.8635 7.97998 11.62 8.08C11.4972 8.12759 11.3851 8.19896 11.29 8.29L8.29 11.29C8.1017 11.4783 7.99591 11.7337 7.99591 12C7.99591 12.2663 8.1017 12.5217 8.29 12.71C8.4783 12.8983 8.7337 13.0041 9 13.0041C9.2663 13.0041 9.5217 12.8983 9.71 12.71L11 11.41L11 15C11 15.2652 11.1054 15.5196 11.2929 15.7071C11.4804 15.8946 11.7348 16 12 16C12.2652 16 12.5196 15.8946 12.7071 15.7071C12.8946 15.5196 13 15.2652 13 15L13 11.41L14.29 12.71C14.383 12.8037 14.4936 12.8781 14.6154 12.9289C14.7373 12.9797 14.868 13.0058 15 13.0058C15.132 13.0058 15.2627 12.9797 15.3846 12.9289C15.5064 12.8781 15.617 12.8037 15.71 12.71C15.8037 12.617 15.8781 12.5064 15.9289 12.3846C15.9797 12.2627 16.0058 12.132 16.0058 12C16.0058 11.868 15.9797 11.7373 15.9289 11.6154C15.8781 11.4936 15.8037 11.383 15.71 11.29L12.71 8.29ZM12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51808 6.3459 2.7612 8.17316C2.00433 10.0004 1.80629 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92893 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8078C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 9.34783 20.9464 6.80429 19.0711 4.92893C18.1425 4.00034 17.0401 3.26375 15.8268 2.7612C14.6136 2.25865 13.3132 2 12 2ZM12 20C10.4177 20 8.87103 19.5308 7.55544 18.6518C6.23984 17.7727 5.21446 16.5233 4.60896 15.0615C4.00346 13.5997 3.84503 11.9911 4.15372 10.4393C4.4624 8.88743 5.22432 7.46196 6.34314 6.34314C7.46196 5.22432 8.88743 4.4624 10.4393 4.15371C11.9911 3.84503 13.5997 4.00346 15.0615 4.60896C16.5233 5.21446 17.7727 6.23984 18.6518 7.55543C19.5308 8.87103 20 10.4177 20 12C20 14.1217 19.1571 16.1566 17.6569 17.6569C16.1566 19.1571 14.1217 20 12 20Z" fill="currentColor"></path>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="overflow-hidden transition-all max-h-0 duration-500 text-coolGray-500 font-medium" x-ref="container" :style="accordion ? 'max-height: ' + $refs.container.scrollHeight + 'px' : ''">Orders are usually shipped within 1-2 business days after placing the order.</div>
+                  </div>
+                  <div class="flex flex-wrap w-full mb-10 text-left cursor-pointer" x-on:click="accordion = !accordion" x-data="{ accordion: false }">
+                    <div class="flex items-center justify-between w-full pb-4">
+                      <h3 class="text-xl text-coolGray-900 font-bold">What shipping options do you have?</h3>
+                      <span class="text-green-500 transition duration-200 transform" x-on:click="accordion = !accordion" :class="{'rotate-0': accordion, 'rotate-180': !accordion }">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.71 8.29C12.6149 8.19896 12.5028 8.12759 12.38 8.08C12.1365 7.97998 11.8635 7.97998 11.62 8.08C11.4972 8.12759 11.3851 8.19896 11.29 8.29L8.29 11.29C8.1017 11.4783 7.99591 11.7337 7.99591 12C7.99591 12.2663 8.1017 12.5217 8.29 12.71C8.4783 12.8983 8.7337 13.0041 9 13.0041C9.2663 13.0041 9.5217 12.8983 9.71 12.71L11 11.41L11 15C11 15.2652 11.1054 15.5196 11.2929 15.7071C11.4804 15.8946 11.7348 16 12 16C12.2652 16 12.5196 15.8946 12.7071 15.7071C12.8946 15.5196 13 15.2652 13 15L13 11.41L14.29 12.71C14.383 12.8037 14.4936 12.8781 14.6154 12.9289C14.7373 12.9797 14.868 13.0058 15 13.0058C15.132 13.0058 15.2627 12.9797 15.3846 12.9289C15.5064 12.8781 15.617 12.8037 15.71 12.71C15.8037 12.617 15.8781 12.5064 15.9289 12.3846C15.9797 12.2627 16.0058 12.132 16.0058 12C16.0058 11.868 15.9797 11.7373 15.9289 11.6154C15.8781 11.4936 15.8037 11.383 15.71 11.29L12.71 8.29ZM12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51808 6.3459 2.7612 8.17316C2.00433 10.0004 1.80629 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92893 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8078C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 9.34783 20.9464 6.80429 19.0711 4.92893C18.1425 4.00034 17.0401 3.26375 15.8268 2.7612C14.6136 2.25865 13.3132 2 12 2ZM12 20C10.4177 20 8.87103 19.5308 7.55544 18.6518C6.23984 17.7727 5.21446 16.5233 4.60896 15.0615C4.00346 13.5997 3.84503 11.9911 4.15372 10.4393C4.4624 8.88743 5.22432 7.46196 6.34314 6.34314C7.46196 5.22432 8.88743 4.4624 10.4393 4.15371C11.9911 3.84503 13.5997 4.00346 15.0615 4.60896C16.5233 5.21446 17.7727 6.23984 18.6518 7.55543C19.5308 8.87103 20 10.4177 20 12C20 14.1217 19.1571 16.1566 17.6569 17.6569C16.1566 19.1571 14.1217 20 12 20Z" fill="currentColor"></path>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="overflow-hidden transition-all max-h-0 duration-500 text-coolGray-500 font-medium" x-ref="container" :style="accordion ? 'max-height: ' + $refs.container.scrollHeight + 'px' : ''">Orders are usually shipped within 1-2 business days after placing the order.</div>
+                  </div>
+                  <div class="flex flex-wrap w-full mb-10 text-left cursor-pointer" x-on:click="accordion = !accordion" x-data="{ accordion: false }">
+                    <div class="flex items-center justify-between w-full pb-4">
+                      <h3 class="text-xl text-coolGray-900 font-bold">How do I make changes to an existing order?</h3>
+                      <span class="text-green-500 transition duration-200 transform" x-on:click="accordion = !accordion" :class="{'rotate-0': accordion, 'rotate-180': !accordion }">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.71 8.29C12.6149 8.19896 12.5028 8.12759 12.38 8.08C12.1365 7.97998 11.8635 7.97998 11.62 8.08C11.4972 8.12759 11.3851 8.19896 11.29 8.29L8.29 11.29C8.1017 11.4783 7.99591 11.7337 7.99591 12C7.99591 12.2663 8.1017 12.5217 8.29 12.71C8.4783 12.8983 8.7337 13.0041 9 13.0041C9.2663 13.0041 9.5217 12.8983 9.71 12.71L11 11.41L11 15C11 15.2652 11.1054 15.5196 11.2929 15.7071C11.4804 15.8946 11.7348 16 12 16C12.2652 16 12.5196 15.8946 12.7071 15.7071C12.8946 15.5196 13 15.2652 13 15L13 11.41L14.29 12.71C14.383 12.8037 14.4936 12.8781 14.6154 12.9289C14.7373 12.9797 14.868 13.0058 15 13.0058C15.132 13.0058 15.2627 12.9797 15.3846 12.9289C15.5064 12.8781 15.617 12.8037 15.71 12.71C15.8037 12.617 15.8781 12.5064 15.9289 12.3846C15.9797 12.2627 16.0058 12.132 16.0058 12C16.0058 11.868 15.9797 11.7373 15.9289 11.6154C15.8781 11.4936 15.8037 11.383 15.71 11.29L12.71 8.29ZM12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51808 6.3459 2.7612 8.17316C2.00433 10.0004 1.80629 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92893 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8078C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 9.34783 20.9464 6.80429 19.0711 4.92893C18.1425 4.00034 17.0401 3.26375 15.8268 2.7612C14.6136 2.25865 13.3132 2 12 2ZM12 20C10.4177 20 8.87103 19.5308 7.55544 18.6518C6.23984 17.7727 5.21446 16.5233 4.60896 15.0615C4.00346 13.5997 3.84503 11.9911 4.15372 10.4393C4.4624 8.88743 5.22432 7.46196 6.34314 6.34314C7.46196 5.22432 8.88743 4.4624 10.4393 4.15371C11.9911 3.84503 13.5997 4.00346 15.0615 4.60896C16.5233 5.21446 17.7727 6.23984 18.6518 7.55543C19.5308 8.87103 20 10.4177 20 12C20 14.1217 19.1571 16.1566 17.6569 17.6569C16.1566 19.1571 14.1217 20 12 20Z" fill="currentColor"></path>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="overflow-hidden transition-all max-h-0 duration-500 text-coolGray-500 font-medium" x-ref="container" :style="accordion ? 'max-height: ' + $refs.container.scrollHeight + 'px' : ''">Orders are usually shipped within 1-2 business days after placing the order.</div>
+                  </div>
+                  <div class="flex flex-wrap w-full mb-10 text-left cursor-pointer" x-on:click="accordion = !accordion" x-data="{ accordion: false }">
+                    <div class="flex items-center justify-between w-full pb-4">
+                      <h3 class="text-xl text-coolGray-900 font-bold">When will my order arrive?</h3>
+                      <span class="text-green-500 transition duration-200 transform" x-on:click="accordion = !accordion" :class="{'rotate-0': accordion, 'rotate-180': !accordion }">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.71 8.29C12.6149 8.19896 12.5028 8.12759 12.38 8.08C12.1365 7.97998 11.8635 7.97998 11.62 8.08C11.4972 8.12759 11.3851 8.19896 11.29 8.29L8.29 11.29C8.1017 11.4783 7.99591 11.7337 7.99591 12C7.99591 12.2663 8.1017 12.5217 8.29 12.71C8.4783 12.8983 8.7337 13.0041 9 13.0041C9.2663 13.0041 9.5217 12.8983 9.71 12.71L11 11.41L11 15C11 15.2652 11.1054 15.5196 11.2929 15.7071C11.4804 15.8946 11.7348 16 12 16C12.2652 16 12.5196 15.8946 12.7071 15.7071C12.8946 15.5196 13 15.2652 13 15L13 11.41L14.29 12.71C14.383 12.8037 14.4936 12.8781 14.6154 12.9289C14.7373 12.9797 14.868 13.0058 15 13.0058C15.132 13.0058 15.2627 12.9797 15.3846 12.9289C15.5064 12.8781 15.617 12.8037 15.71 12.71C15.8037 12.617 15.8781 12.5064 15.9289 12.3846C15.9797 12.2627 16.0058 12.132 16.0058 12C16.0058 11.868 15.9797 11.7373 15.9289 11.6154C15.8781 11.4936 15.8037 11.383 15.71 11.29L12.71 8.29ZM12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51808 6.3459 2.7612 8.17316C2.00433 10.0004 1.80629 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92893 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8078C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 9.34783 20.9464 6.80429 19.0711 4.92893C18.1425 4.00034 17.0401 3.26375 15.8268 2.7612C14.6136 2.25865 13.3132 2 12 2ZM12 20C10.4177 20 8.87103 19.5308 7.55544 18.6518C6.23984 17.7727 5.21446 16.5233 4.60896 15.0615C4.00346 13.5997 3.84503 11.9911 4.15372 10.4393C4.4624 8.88743 5.22432 7.46196 6.34314 6.34314C7.46196 5.22432 8.88743 4.4624 10.4393 4.15371C11.9911 3.84503 13.5997 4.00346 15.0615 4.60896C16.5233 5.21446 17.7727 6.23984 18.6518 7.55543C19.5308 8.87103 20 10.4177 20 12C20 14.1217 19.1571 16.1566 17.6569 17.6569C16.1566 19.1571 14.1217 20 12 20Z" fill="currentColor"></path>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="overflow-hidden transition-all max-h-0 duration-500 text-coolGray-500 font-medium" x-ref="container" :style="accordion ? 'max-height: ' + $refs.container.scrollHeight + 'px' : ''">Orders are usually shipped within 1-2 business days after placing the order.</div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wave wave-bottom w-full text-coolGray-50">
+          <svg viewbox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 51.4091H349.922C606.664 51.4091 859.771 116 1080 116C1300.23 116 1440 51.4091 1440 51.4091V0H0V51.4091Z" fill="currentColor"></path>
+          </svg>
+        </div>
+      </section>
+                
+      <section class="wave-top wave-bottom">
+        <div class="wave wave-top w-full text-coolGray-50">
+          <svg viewbox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1440 64.5909H1090.08C833.336 64.5909 580.229 -7.62939e-06 360 -7.62939e-06C139.771 -7.62939e-06 0 64.5909 0 64.5909V116H1440V64.5909Z" fill="currentColor"></path>
+          </svg>
+        </div>
+        <div class="py-16 md:py-24 bg-coolGray-50" style="background-image: url('flex-ui-assets/elements/pattern-light1.svg'); background-position: center;">
+          <div class="container px-4 mx-auto">
+            <div class="mb-16 text-center">
+              <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-green-500 bg-green-100 font-medium uppercase rounded-9xl">Team</span>
+              <h3 class="mb-4 text-3xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">Our team is the best in the business.</h3>
+              <p class="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">Highly professional and capable of running your business across all digital channels.</p>
+              <div class="flex flex-wrap justify-center">
+                <div class="w-full md:w-auto py-1 md:py-0 md:mr-4"><a class="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-green-50 font-medium text-center bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 border border-green-500 rounded-md shadow-sm" href="#">Open Positions</a></div>
+                <div class="w-full md:w-auto py-1 md:py-0"><a class="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-coolGray-800 font-medium text-center bg-white hover:bg-coolGray-100 focus:ring-2 focus:ring-coolGray-200 focus:ring-opacity-50 border border-coolGray-200 rounded-md shadow-sm" href="#">About Us</a></div>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+              <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-10">
+                <div class="h-full py-8 px-10 bg-white rounded-md text-center">
+                  <img class="w-24 h-24 mx-auto mb-6 rounded-full" src="flex-ui-assets/images/teams/avatar1.png" alt="">
+                  <h3 class="mb-2 text-2xl md:text-3xl leading-tight font-semibold">Macauley Herring</h3>
+                  <span class="inline-block mb-6 text-lg font-medium text-green-500">CEO &amp; Founder</span>
+                  <p class="mb-8 text-coolGray-500 font-medium">Dance is the hidden language of the soul.</p>
+                  <div class="flex items-center justify-center">
+                    <a class="inline-block mr-6 hover:opacity-80" href="#">
+                      <img src="flex-ui-assets/brands/facebook.svg" alt="">
+                    </a>
+                    <a class="inline-block hover:opacity-80" href="#">
+                      <img src="flex-ui-assets/brands/twitter.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-10">
+                <div class="h-full py-8 px-10 bg-white rounded-md text-center">
+                  <img class="w-24 h-24 mx-auto mb-6 rounded-full" src="flex-ui-assets/images/teams/avatar2.png" alt="">
+                  <h3 class="mb-2 text-2xl md:text-3xl leading-tight font-semibold">Ivan Mathews</h3>
+                  <span class="inline-block mb-6 text-lg font-medium text-green-500">CTO</span>
+                  <p class="mb-8 text-coolGray-500 font-medium">Everything you’ve ever wanted is on the other side of fear.</p>
+                  <div class="flex items-center justify-center">
+                    <a class="inline-block mr-6 hover:opacity-80" href="#">
+                      <img src="flex-ui-assets/brands/facebook.svg" alt="">
+                    </a>
+                    <a class="inline-block hover:opacity-80" href="#">
+                      <img src="flex-ui-assets/brands/twitter.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-10">
+                <div class="h-full py-8 px-10 bg-white rounded-md text-center">
+                  <img class="w-24 h-24 mx-auto mb-6 rounded-full" src="flex-ui-assets/images/teams/avatar3.png" alt="">
+                  <h3 class="mb-2 text-2xl md:text-3xl leading-tight font-semibold">Elen Benitez</h3>
+                  <span class="inline-block mb-6 text-lg font-medium text-green-500">CPO</span>
+                  <p class="mb-8 text-coolGray-500 font-medium">The only way to do great work is to love what you do.</p>
+                  <div class="flex items-center justify-center">
+                    <a class="inline-block mr-6 hover:opacity-80" href="#">
+                      <img src="flex-ui-assets/brands/facebook.svg" alt="">
+                    </a>
+                    <a class="inline-block hover:opacity-80" href="#">
+                      <img src="flex-ui-assets/brands/twitter.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-10 lg:mb-0">
+                <div class="h-full py-8 px-10 bg-white rounded-md text-center">
+                  <img class="w-24 h-24 mx-auto mb-6 rounded-full" src="flex-ui-assets/images/teams/avatar4.png" alt="">
+                  <h3 class="mb-2 text-2xl md:text-3xl leading-tight font-semibold">Kacy Wade</h3>
+                  <span class="inline-block mb-6 text-lg font-medium text-green-500">Customer Success</span>
+                  <p class="mb-8 text-coolGray-500 font-medium">There are no traffic jams along the extra mile.</p>
+                  <div class="flex items-center justify-center">
+                    <a class="inline-block mr-6 hover:opacity-80" href="#">
+                      <img src="flex-ui-assets/brands/facebook.svg" alt="">
+                    </a>
+                    <a class="inline-block hover:opacity-80" href="#">
+                      <img src="flex-ui-assets/brands/twitter.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-10 md:mb-0">
+                <div class="h-full py-8 px-10 bg-white rounded-md text-center">
+                  <img class="w-24 h-24 mx-auto mb-6 rounded-full" src="flex-ui-assets/images/teams/avatar5.png" alt="">
+                  <h3 class="mb-2 text-2xl md:text-3xl leading-tight font-semibold">Alya Levine</h3>
+                  <span class="inline-block mb-6 text-lg font-medium text-green-500">Backend Developer</span>
+                  <p class="mb-8 text-coolGray-500 font-medium">The mind is everything. What you think you become.</p>
+                  <div class="flex items-center justify-center">
+                    <a class="inline-block mr-6 hover:opacity-80" href="#">
+                      <img src="flex-ui-assets/brands/facebook.svg" alt="">
+                    </a>
+                    <a class="inline-block hover:opacity-80" href="#">
+                      <img src="flex-ui-assets/brands/twitter.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+                <div class="h-full py-8 px-10 bg-white rounded-md text-center">
+                  <img class="w-24 h-24 mx-auto mb-6 rounded-full" src="flex-ui-assets/images/teams/avatar6.png" alt="">
+                  <h3 class="mb-2 text-2xl md:text-3xl leading-tight font-semibold">Rose Hernandez</h3>
+                  <span class="inline-block mb-6 text-lg font-medium text-green-500">IOS Developer</span>
+                  <p class="mb-8 text-coolGray-500 font-medium">Whether you think you can or you think you can’t, you’re right.</p>
+                  <div class="flex items-center justify-center">
+                    <a class="inline-block mr-6 hover:opacity-80" href="#">
+                      <img src="flex-ui-assets/brands/facebook.svg" alt="">
+                    </a>
+                    <a class="inline-block hover:opacity-80" href="#">
+                      <img src="flex-ui-assets/brands/twitter.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wave wave-bottom w-full text-coolGray-50">
+          <svg viewbox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 51.4091H349.922C606.664 51.4091 859.771 116 1080 116C1300.23 116 1440 51.4091 1440 51.4091V0H0V51.4091Z" fill="currentColor"></path>
+          </svg>
+        </div>
+      </section>
+                
+      <section class="bg-white">
+        <div class="wave-top w-full text-coolGray-50">
+          <svg viewbox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 64.5909H349.922C606.664 64.5909 859.771 -7.62939e-06 1080 -7.62939e-06C1300.23 -7.62939e-06 1440 64.5909 1440 64.5909V116H0V64.5909Z" fill="currentColor"></path>
+          </svg>
+        </div>
+        <div class="py-20 md:py-24 bg-coolGray-50" style="background-image: url('flex-ui-assets/elements/pattern-light1.svg'); background-position: center;">
+          <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap -mx-4">
+              <div class="w-full md:w-1/3 px-4 mb-12 md:mb-0">
+                <div class="max-w-xs mx-auto text-center">
+                  <div class="inline-flex mb-6 items-center justify-center w-18 h-18 bg-green-500 rounded-full">
+                    <svg class="h-8 text-white" width="32" height="32" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.21 8.82L14 2.78C13.474 2.27986 12.7759 2.00095 12.05 2.00095C11.3241 2.00095 10.626 2.27986 10.1 2.78L3.89 8.78C3.61408 9.02087 3.39216 9.31731 3.23879 9.64991C3.08541 9.98251 3.00404 10.3438 3 10.71V19.29C3.01054 20.0176 3.30904 20.7114 3.83012 21.2193C4.35119 21.7273 5.05235 22.008 5.78 22H18.22C18.9476 22.008 19.6488 21.7273 20.1699 21.2193C20.691 20.7114 20.9895 20.0176 21 19.29V10.71C20.9992 10.3585 20.929 10.0106 20.7935 9.68623C20.6579 9.36189 20.4596 9.06752 20.21 8.82V8.82ZM11.44 4.22C11.593 4.08016 11.7927 4.00262 12 4.00262C12.2073 4.00262 12.407 4.08016 12.56 4.22L18 9.5L12.53 14.78C12.377 14.9198 12.1773 14.9974 11.97 14.9974C11.7627 14.9974 11.563 14.9198 11.41 14.78L6 9.5L11.44 4.22ZM19 19.29C18.9871 19.4863 18.8987 19.6699 18.7532 19.8023C18.6078 19.9347 18.4166 20.0056 18.22 20H5.78C5.58338 20.0056 5.39225 19.9347 5.24678 19.8023C5.10132 19.6699 5.01286 19.4863 5 19.29V11.35L9.05 15.25L7.39 16.85C7.20375 17.0374 7.09921 17.2908 7.09921 17.555C7.09921 17.8192 7.20375 18.0726 7.39 18.26C7.48295 18.3575 7.59463 18.4352 7.71836 18.4885C7.84208 18.5418 7.97529 18.5695 8.11 18.57C8.36747 18.569 8.61462 18.4687 8.8 18.29L10.57 16.59C11.0096 16.8586 11.5148 17.0008 12.03 17.0008C12.5452 17.0008 13.0504 16.8586 13.49 16.59L15.26 18.29C15.4454 18.4687 15.6925 18.569 15.95 18.57C16.0847 18.5695 16.2179 18.5418 16.3416 18.4885C16.4654 18.4352 16.5771 18.3575 16.67 18.26C16.8563 18.0726 16.9608 17.8192 16.9608 17.555C16.9608 17.2908 16.8563 17.0374 16.67 16.85L15 15.25L19 11.35V19.29Z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                  <h3 class="mb-2 text-2xl md:text-3xl leading-9 text-coolGray-900 font-bold">Email</h3>
+                  <p class="mb-4 text-lg md:text-xl font-medium text-coolGray-500 leading-7">Lorem ipsum dolor sit amet</p>
+                  <a class="text-lg md:text-xl text-green-500 hover:text-green-600 font-medium" href="mailto:#">contact@flex.co</a>
+                </div>
+              </div>
+              <div class="w-full md:w-1/3 px-4 mb-12 md:mb-0">
+                <div class="max-w-xs mx-auto text-center">
+                  <div class="inline-flex mb-6 items-center justify-center w-18 h-18 bg-green-500 rounded-full">
+                    <svg class="h-8 text-white" width="32" height="32" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.41 13C19.1901 13 18.96 12.93 18.74 12.88C18.2949 12.7805 17.8572 12.6501 17.43 12.49C16.9661 12.3212 16.4562 12.33 15.9984 12.5146C15.5405 12.6992 15.1671 13.0466 14.95 13.49L14.73 13.95C13.7589 13.3992 12.8617 12.7271 12.0601 11.95C11.2829 11.1484 10.6108 10.2512 10.0601 9.28L10.5201 9.07C10.9634 8.85292 11.3108 8.47953 11.4954 8.02169C11.6801 7.56385 11.6888 7.05391 11.5201 6.59C11.3612 6.15903 11.231 5.71808 11.13 5.27C11.08 5.05 11.04 4.82 11.01 4.6C10.8886 3.89562 10.5197 3.25774 9.96967 2.80124C9.41967 2.34474 8.72475 2.09961 8.01005 2.11H5.00005C4.5773 2.10945 4.1592 2.19825 3.77317 2.37058C3.38714 2.54292 3.04189 2.7949 2.76005 3.11C2.47237 3.43365 2.25817 3.81575 2.13215 4.23004C2.00614 4.64432 1.97131 5.08098 2.03005 5.51C2.57364 9.67214 4.47526 13.5387 7.44005 16.51C10.4114 19.4748 14.2779 21.3764 18.4401 21.92C18.5699 21.9299 18.7002 21.9299 18.83 21.92C19.5675 21.9211 20.2794 21.6505 20.83 21.16C21.1452 20.8782 21.3971 20.5329 21.5695 20.1469C21.7418 19.7609 21.8306 19.3428 21.83 18.92V15.92C21.8247 15.229 21.5809 14.5611 21.14 14.0291C20.6991 13.4971 20.088 13.1336 19.41 13ZM19.9 19C19.8997 19.1395 19.8702 19.2775 19.8134 19.4049C19.7565 19.5324 19.6736 19.6465 19.57 19.74C19.4604 19.8399 19.33 19.9141 19.1882 19.9573C19.0464 20.0006 18.8967 20.0117 18.75 19.99C15.0183 19.5026 11.5503 17.802 8.88005 15.15C6.20752 12.4775 4.49208 8.99737 4.00005 5.25C3.97833 5.10333 3.98949 4.95367 4.03272 4.81185C4.07596 4.67003 4.1502 4.5396 4.25005 4.43C4.34467 4.32515 4.46043 4.24154 4.5897 4.18466C4.71897 4.12778 4.85882 4.09892 5.00005 4.1H8.00005C8.23121 4.09435 8.45719 4.16898 8.63951 4.3112C8.82184 4.45341 8.94925 4.65442 9.00005 4.88C9.00005 5.15 9.09005 5.43 9.15005 5.7C9.26563 6.22386 9.41937 6.73857 9.61005 7.24L8.21005 7.9C7.96941 8.01046 7.78241 8.21185 7.69005 8.46C7.59003 8.70346 7.59003 8.97654 7.69005 9.22C9.12925 12.3028 11.6073 14.7808 14.69 16.22C14.9335 16.32 15.2066 16.32 15.45 16.22C15.6982 16.1276 15.8996 15.9406 16.01 15.7L16.64 14.3C17.156 14.4881 17.6838 14.6418 18.22 14.76C18.48 14.82 18.76 14.87 19.0301 14.91C19.2556 14.9608 19.4566 15.0882 19.5989 15.2705C19.7411 15.4529 19.8157 15.6788 19.81 15.91L19.9 19ZM14 2C13.7701 2 13.53 2 13.3 2C13.0348 2.02254 12.7894 2.14952 12.6178 2.353C12.4462 2.55647 12.3625 2.81978 12.385 3.085C12.4076 3.35022 12.5346 3.59562 12.738 3.76721C12.9415 3.93881 13.2048 4.02254 13.47 4H14C15.5913 4 17.1175 4.63214 18.2427 5.75736C19.3679 6.88258 20 8.4087 20 10C20 10.18 20 10.35 20 10.53C19.9779 10.7938 20.0612 11.0556 20.2318 11.2581C20.4024 11.4606 20.6463 11.5871 20.91 11.61H20.99C21.2404 11.611 21.482 11.5181 21.6671 11.3496C21.8523 11.1811 21.9675 10.9493 21.99 10.7C21.99 10.47 21.99 10.23 21.99 10C21.9901 7.88 21.1486 5.84668 19.6504 4.34668C18.1523 2.84667 16.12 2.00265 14 2ZM16 10C16 10.2652 16.1054 10.5196 16.2929 10.7071C16.4805 10.8946 16.7348 11 17 11C17.2653 11 17.5196 10.8946 17.7072 10.7071C17.8947 10.5196 18 10.2652 18 10C18 8.93913 17.5786 7.92172 16.8285 7.17157C16.0783 6.42143 15.0609 6 14 6C13.7348 6 13.4805 6.10536 13.2929 6.29289C13.1054 6.48043 13 6.73478 13 7C13 7.26522 13.1054 7.51957 13.2929 7.70711C13.4805 7.89464 13.7348 8 14 8C14.5305 8 15.0392 8.21071 15.4143 8.58579C15.7893 8.96086 16 9.46957 16 10Z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                  <h3 class="mb-2 text-2xl md:text-3xl leading-9 text-coolGray-900 font-bold">Phone</h3>
+                  <p class="mb-4 text-lg md:text-xl font-medium text-coolGray-500 leading-7">Lorem ipsum dolor sit amet</p>
+                  <p class="text-lg md:text-xl text-green-500 font-medium">+7-843-672-431</p>
+                </div>
+              </div>
+              <div class="w-full md:w-1/3 px-4">
+                <div class="max-w-xs mx-auto text-center">
+                  <div class="inline-flex mb-6 items-center justify-center w-18 h-18 bg-green-500 rounded-full">
+                    <svg class="h-8 text-white" width="32" height="32" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.0001 4.48C16.4088 2.8887 14.2505 1.99472 12.0001 1.99472C9.74961 1.99472 7.59135 2.8887 6.00005 4.48C4.40875 6.0713 3.51477 8.22957 3.51477 10.48C3.51477 12.7304 4.40875 14.8887 6.00005 16.48L11.2701 21.76C11.363 21.8537 11.4736 21.9281 11.5955 21.9789C11.7173 22.0297 11.848 22.0558 11.9801 22.0558C12.1121 22.0558 12.2428 22.0297 12.3646 21.9789C12.4865 21.9281 12.5971 21.8537 12.6901 21.76L18.0001 16.43C19.5847 14.8453 20.4749 12.6961 20.4749 10.455C20.4749 8.21395 19.5847 6.06468 18.0001 4.48ZM16.5701 15L12.0001 19.59L7.43005 15C6.5272 14.0963 5.91253 12.9452 5.66375 11.6923C5.41497 10.4393 5.54324 9.14075 6.03236 7.96068C6.52147 6.78062 7.34947 5.77205 8.41168 5.06248C9.4739 4.35291 10.7226 3.97418 12.0001 3.97418C13.2775 3.97418 14.5262 4.35291 15.5884 5.06248C16.6506 5.77205 17.4786 6.78062 17.9677 7.96068C18.4569 9.14075 18.5851 10.4393 18.3364 11.6923C18.0876 12.9452 17.4729 14.0963 16.5701 15ZM9.00005 7.41C8.19277 8.21977 7.73945 9.31657 7.73945 10.46C7.73945 11.6034 8.19277 12.7002 9.00005 13.51C9.59981 14.1108 10.3636 14.5211 11.1957 14.6894C12.0278 14.8577 12.891 14.7766 13.6771 14.4562C14.4632 14.1357 15.1372 13.5903 15.6145 12.8883C16.0918 12.1862 16.3512 11.3589 16.3601 10.51C16.3646 9.94321 16.2554 9.38126 16.039 8.85739C15.8225 8.33352 15.5033 7.85836 15.1001 7.46C14.7037 7.05458 14.2311 6.73154 13.7095 6.50947C13.1878 6.2874 12.6274 6.17068 12.0605 6.16603C11.4935 6.16138 10.9313 6.2689 10.406 6.48239C9.8808 6.69588 9.40297 7.01113 9.00005 7.41ZM13.6901 12.09C13.3111 12.4747 12.8103 12.7159 12.2732 12.7723C11.7361 12.8286 11.1961 12.6966 10.7456 12.3989C10.295 12.1012 9.96185 11.6562 9.80306 11.1401C9.64427 10.6239 9.6697 10.0686 9.87501 9.56916C10.0803 9.06967 10.4528 8.65702 10.9286 8.40174C11.4045 8.14646 11.9543 8.06441 12.484 8.16962C13.0137 8.27483 13.4904 8.56076 13.8326 8.97853C14.1748 9.39631 14.3612 9.91997 14.3601 10.46C14.3455 11.0773 14.0865 11.6635 13.6401 12.09H13.6901Z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                  <h3 class="mb-2 text-2xl md:text-3xl font-bold leading-9 text-coolGray-900">Office</h3>
+                  <p class="mb-4 text-xl font-medium text-coolGray-500 leading-7">Lorem ipsum dolor sit amet</p>
+                  <p class="text-lg md:text-xl font-medium text-green-500">1686, Geraldine Lane</p>
+                  <p class="text-lg md:text-xl font-medium text-green-500">New York, NY 10013</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wave-bottom w-full text-coolGray-50">
+          <svg viewbox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1440 51.4091H1090.08C833.336 51.4091 580.229 116 360 116C139.771 116 0 51.4091 0 51.4091V0H1440V51.4091Z" fill="currentColor"></path>
+          </svg>
+        </div>
+      </section>
+                
+      <section class="py-24 bg-white overflow-hidden" style="background-image: url('flex-ui-assets/elements/pattern-white.svg'); background-position: center;">
+        <div class="container px-4 mx-auto">
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full md:w-1/2 px-4 mb-20 lg:mb-0">
+              <div class="max-w-md mx-auto">
+                <h2 class="mb-8 text-4xl md:text-5xl font-heading font-bold text-coolGray-900 md:leading-15">Join 6,000+ startups growing with Flex</h2>
+                <ul class="mb-8">
+                  <li class="flex items-center mb-4">
+                    <img class="mr-3" src="flex-ui-assets/elements/cta/checkbox-green.svg" alt="">
+                    <span class="text-lg md:text-xl font-heading text-coolGray-500">Mauris pellentesque congue libero nec</span>
+                  </li>
+                  <li class="flex items-center mb-4">
+                    <img class="mr-3" src="flex-ui-assets/elements/cta/checkbox-green.svg" alt="">
+                    <span class="text-lg md:text-xl font-heading text-coolGray-500">Suspendisse mollis tincidunt</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img class="mr-3" src="flex-ui-assets/elements/cta/checkbox-green.svg" alt="">
+                    <span class="text-lg md:text-xl font-heading text-coolGray-500">Praesent varius justo vel justo pulvinar</span>
+                  </li>
+                </ul>
+                <div class="flex flex-wrap items-center"><a class="inline-flex items-center justify-center px-7 py-3 h-14 w-full md:w-auto mb-2 md:mb-0 md:mr-4 md:w-auto text-lg leading-7 text-coolGray-800 bg-white hover:bg-coolGray-100 font-medium focus:ring-2 focus:ring-coolGray-200 focus:ring-opacity-50 border border-coolGray-200 border border-coolGray-100 rounded-md shadow-sm" href="#">Learn More</a><a class="inline-flex items-center justify-center px-7 py-3 h-14 w-full md:w-auto text-lg leading-7 text-green-50 bg-green-500 hover:bg-green-600 font-medium focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 border border-transparent rounded-md shadow-sm" href="#">Get Started</a></div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 px-4">
+              <div class="relative max-w-max mx-auto">
+                <img class="absolute top-0 right-0 -mt-6 lg:-mt-12 -mr-6 lg:-mr-12 w-20 lg:w-auto z-10" src="flex-ui-assets/elements/circle3-yellow.svg" alt="">
+                <img class="absolute bottom-0 left-0 -mb-6 lg:-mb-10-ml-6 lg:-ml-12 w-20 lg:w-auto" src="flex-ui-assets/elements/dots3-blue.svg" alt="">
+                <img class="relative" src="flex-ui-assets/elements/cta/photo-laptop-ph.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                
+      <section class="py-20 xl:py-24 bg-white" style="background-image: url('flex-ui-assets/elements/pattern-white.svg'); background-position: center;">
+        <div class="container px-4 mx-auto">
+          <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-green-500 bg-green-100 font-medium uppercase rounded-9xl">Numbers</span>
+          <h3 class="mb-4 text-4xl md:text-5xl text-coolGray-900 font-bold tracking-tighter">We believe in the power of data</h3>
+          <p class="mb-16 xl:mb-24 text-lg md:text-xl text-coolGray-500 font-medium max-w-3xl">Flex is the only business platform that lets you run your business on one platform, seamlessly across all digital channels.</p>
+          <div class="flex flex-wrap items-center -mx-4 text-center">
+            <div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
+              <div class="flex flex-wrap justify-center -mx-4">
+                <div class="w-full md:w-1/2 px-4 mb-8">
+                  <h2 class="mb-4 text-4xl lg:text-5xl text-green-600 font-bold tracking-tighter">235.000</h2>
+                  <h3 class="mb-2 text-lg md:text-xl text-coolGray-800 font-bold">Projects completed</h3>
+                  <p class="text-coolGray-500 font-medium">No need to hire specialists for each channel.</p>
+                </div>
+                <div class="w-full md:w-1/2 px-4 mb-8">
+                  <h2 class="mb-4 text-4xl lg:text-5xl text-green-600 font-bold tracking-tighter">$10m</h2>
+                  <h3 class="mb-2 text-lg md:text-xl text-coolGray-800 font-bold">APR</h3>
+                  <p class="text-coolGray-500 font-medium">Track how much money a company just in case</p>
+                </div>
+                <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
+                  <h2 class="mb-4 text-4xl lg:text-5xl text-green-600 font-bold tracking-tighter">+50.000</h2>
+                  <h3 class="mb-2 text-lg lg:text-xl text-coolGray-800 font-bold">Hours Saved Annually</h3>
+                  <p class="text-coolGray-500 font-medium">Manage many companies, even with different languages.</p>
+                </div>
+                <div class="w-full md:w-1/2 px-4">
+                  <h2 class="mb-4 text-4xl lg:text-5xl text-green-600 font-bold tracking-tighter">3.500</h2>
+                  <h3 class="mb-2 text-lg md:text-xl text-coolGray-800 font-bold">Unique Users</h3>
+                  <p class="text-coolGray-500 font-medium">Everyone works the way they want to, on their own schedule.</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 px-4">
+              <img class="mx-auto md:mr-0" src="flex-ui-assets/images/numbers/work.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+                
+      <section class="bg-white">
+        <div class="wave-top w-full text-coolGray-50">
+          <svg viewbox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 64.5909H349.922C606.664 64.5909 859.771 -7.62939e-06 1080 -7.62939e-06C1300.23 -7.62939e-06 1440 64.5909 1440 64.5909V116H0V64.5909Z" fill="currentColor"></path>
+          </svg>
+        </div>
+        <div class="bg-coolGray-50 overflow-hidden" style="background-image: url('flex-ui-assets/elements/pattern-light1.svg'); background-position: center;">
+          <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap lg:items-center pt-24 pb-12 -mx-4">
+              <div class="w-full md:w-3/4 px-4">
+                <a class="block mb-8 max-w-max" href="#">
+                  <img class="h-8" src="flex-ui-assets/logos/flex-ui-green-light.svg" alt="">
+                </a>
+                <p class="mb-12 text-base md:text-lg text-coolGray-400 font-medium md:max-w-sm">Launch your own Software As A Service Application with Flex Solutions.</p>
+                <div class="mb-12 md:mb-0 flex flex-wrap -mx-3 md:-mx-6">
+                  <div class="w-full md:w-auto p-3 md:py-0 md:px-6"><a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="#">Product</a></div>
+                  <div class="w-full md:w-auto p-3 md:py-0 md:px-6"><a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="#">Features</a></div>
+                  <div class="w-full md:w-auto p-3 md:py-0 md:px-6"><a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="#">Pricing</a></div>
+                  <div class="w-full md:w-auto p-3 md:py-0 md:px-6"><a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="#">Resources</a></div>
+                  <div class="w-full md:w-auto p-3 md:py-0 md:px-6"><a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="#">Careers</a></div>
+                  <div class="w-full md:w-auto p-3 md:py-0 md:px-6"><a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="#">Help</a></div>
+                  <div class="w-full md:w-auto p-3 md:py-0 md:px-6"><a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="#">Privacy</a></div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/4 px-4">
+                <div class="lg:pr-10 lg:ml-auto lg:max-w-max">
+                  <a class="block mb-4" href="#">
+                    <img src="flex-ui-assets/elements/app-store.svg" alt="">
+                  </a>
+                  <a class="block" href="#">
+                    <img src="flex-ui-assets/elements/google-play.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-b border-coolGray-100"></div>
+          <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap items-center py-12 md:pb-32">
+              <div class="w-full md:w-1/2 mb-6 md:mb-0">
+                <p class="text-coolGray-400 font-medium">© 2021 Flex. All rights reserved.</p>
+              </div>
+              <div class="w-full md:w-1/2">
+                <div class="flex flex-wrap md:justify-end -mx-5">
+                  <div class="px-5">
+                    <a class="inline-block text-coolGray-300 hover:text-coolGray-400" href="#">
+                      <svg width="10" height="18" viewbox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.63494 17.7273V9.76602H9.3583L9.76688 6.66246H6.63494V4.68128C6.63494 3.78301 6.88821 3.17085 8.20297 3.17085L9.87712 3.17017V0.394238C9.5876 0.357335 8.59378 0.272728 7.43708 0.272728C5.0217 0.272728 3.3681 1.71881 3.3681 4.37391V6.66246H0.636475V9.76602H3.3681V17.7273H6.63494Z" fill="currentColor"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="px-5">
+                    <a class="inline-block text-coolGray-300 hover:text-coolGray-400" href="#">
+                      <svg width="19" height="16" viewbox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.8181 2.14597C18.1356 2.44842 17.4032 2.65355 16.6336 2.74512C17.4194 2.27461 18.0208 1.5283 18.3059 0.641757C17.5689 1.07748 16.7553 1.39388 15.8885 1.56539C15.1943 0.824879 14.2069 0.363636 13.1118 0.363636C11.0108 0.363636 9.30722 2.06718 9.30722 4.16706C9.30722 4.46488 9.34083 4.75576 9.40574 5.03391C6.24434 4.87512 3.44104 3.36048 1.56483 1.05894C1.23686 1.61985 1.05028 2.27342 1.05028 2.97109C1.05028 4.29106 1.72243 5.45573 2.74225 6.13712C2.11877 6.11627 1.53237 5.94476 1.01901 5.65967V5.70718C1.01901 7.54979 2.33086 9.08761 4.07031 9.43761C3.75161 9.52336 3.41555 9.57088 3.06789 9.57088C2.82222 9.57088 2.58464 9.54655 2.35171 9.50018C2.8361 11.0125 4.24067 12.1123 5.90483 12.1424C4.6034 13.1622 2.96243 13.7683 1.1801 13.7683C0.873008 13.7683 0.570523 13.7498 0.272705 13.7162C1.95655 14.7974 3.95561 15.4278 6.10416 15.4278C13.1026 15.4278 16.928 9.63115 16.928 4.60397L16.9153 4.11145C17.6627 3.57833 18.3094 2.90851 18.8181 2.14597Z" fill="currentColor"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="px-5">
+                    <a class="inline-block text-coolGray-300 hover:text-coolGray-400" href="#">
+                      <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.6007 0.181818H14.3992C17.3874 0.181818 19.8184 2.61281 19.8182 5.60074V14.3993C19.8182 17.3872 17.3874 19.8182 14.3992 19.8182H5.6007C2.61276 19.8182 0.181885 17.3873 0.181885 14.3993V5.60074C0.181885 2.61281 2.61276 0.181818 5.6007 0.181818ZM14.3993 18.0759C16.4267 18.0759 18.0761 16.4266 18.0761 14.3993H18.076V5.60074C18.076 3.57348 16.4266 1.92405 14.3992 1.92405H5.6007C3.57343 1.92405 1.92412 3.57348 1.92412 5.60074V14.3993C1.92412 16.4266 3.57343 18.0761 5.6007 18.0759H14.3993ZM4.85721 10.0001C4.85721 7.16424 7.16425 4.85714 10.0001 4.85714C12.8359 4.85714 15.1429 7.16424 15.1429 10.0001C15.1429 12.8359 12.8359 15.1429 10.0001 15.1429C7.16425 15.1429 4.85721 12.8359 4.85721 10.0001ZM6.62805 10C6.62805 11.8593 8.14081 13.3719 10.0001 13.3719C11.8593 13.3719 13.3721 11.8593 13.3721 10C13.3721 8.14058 11.8594 6.6279 10.0001 6.6279C8.14069 6.6279 6.62805 8.14058 6.62805 10Z" fill="currentColor"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="px-5">
+                    <a class="inline-block text-coolGray-300 hover:text-coolGray-400" href="#">
+                      <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0C4.0275 0 0 4.13211 0 9.22838C0 13.3065 2.5785 16.7648 6.15375 17.9841C6.60375 18.0709 6.76875 17.7853 6.76875 17.5403C6.76875 17.3212 6.76125 16.7405 6.7575 15.9712C4.254 16.5277 3.726 14.7332 3.726 14.7332C3.3165 13.6681 2.72475 13.3832 2.72475 13.3832C1.9095 12.8111 2.78775 12.8229 2.78775 12.8229C3.6915 12.887 4.16625 13.7737 4.16625 13.7737C4.96875 15.1847 6.273 14.777 6.7875 14.5414C6.8685 13.9443 7.10025 13.5381 7.3575 13.3073C5.35875 13.0764 3.258 12.2829 3.258 8.74709C3.258 7.73988 3.60675 6.91659 4.18425 6.27095C4.083 6.03774 3.77925 5.0994 4.263 3.82846C4.263 3.82846 5.01675 3.58116 6.738 4.77462C7.458 4.56958 8.223 4.46785 8.988 4.46315C9.753 4.46785 10.518 4.56958 11.238 4.77462C12.948 3.58116 13.7017 3.82846 13.7017 3.82846C14.1855 5.0994 13.8818 6.03774 13.7917 6.27095C14.3655 6.91659 14.7142 7.73988 14.7142 8.74709C14.7142 12.2923 12.6105 13.0725 10.608 13.2995C10.923 13.5765 11.2155 14.1423 11.2155 15.0071C11.2155 16.242 11.2043 17.2344 11.2043 17.5341C11.2043 17.7759 11.3617 18.0647 11.823 17.9723C15.4237 16.7609 18 13.3002 18 9.22838C18 4.13211 13.9703 0 9 0Z" fill="currentColor"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="px-5">
+                    <a class="inline-block text-coolGray-300 hover:text-coolGray-400" href="#">
+                      <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.2 0H1.8C0.81 0 0 0.81 0 1.8V16.2C0 17.19 0.81 18 1.8 18H16.2C17.19 18 18 17.19 18 16.2V1.8C18 0.81 17.19 0 16.2 0ZM5.4 15.3H2.7V7.2H5.4V15.3ZM4.05 5.67C3.15 5.67 2.43 4.95 2.43 4.05C2.43 3.15 3.15 2.43 4.05 2.43C4.95 2.43 5.67 3.15 5.67 4.05C5.67 4.95 4.95 5.67 4.05 5.67ZM15.3 15.3H12.6V10.53C12.6 9.81004 11.97 9.18 11.25 9.18C10.53 9.18 9.9 9.81004 9.9 10.53V15.3H7.2V7.2H9.9V8.28C10.35 7.56 11.34 7.02 12.15 7.02C13.86 7.02 15.3 8.46 15.3 10.17V15.3Z" fill="currentColor"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/charts-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+</body>
+</html>
+
